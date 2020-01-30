@@ -33,12 +33,7 @@ public class MainActivity extends AppCompatActivity {
             resetTimer();
 
         }else {
-            new Thread(new Runnable() {
-                public void run() {
-                    ImageView imageView=findViewById(R.id.eggImageView);
-                    imageView.setImageResource(R.drawable.ironmanstop);
-                }
-            }).start();
+
             counterIsActive = true;
             timerSeekBar.setEnabled(false);
             goButton.setText("STOP");
